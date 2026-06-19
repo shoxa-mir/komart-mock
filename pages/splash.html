@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · Splash</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-page="splash" data-role="splash" data-tab="none" style="background:linear-gradient(176deg,#FFFDFB 0%,#FAF3EE 46%,#FADDE2 135%)">
+  <div class="kom-app" style="background:linear-gradient(176deg,#FFFDFB 0%,#FAF3EE 46%,#FADDE2 135%)">
+
+    <div class="ios-status">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="kom-petals" aria-hidden="true">
+      <div style="position:absolute;top:-30px;left:8%;width:14px;height:11.9px;background:#FADDE2;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 9s linear 0s infinite"></div>
+      <div style="position:absolute;top:-30px;left:22%;width:10px;height:8.5px;background:#F4C3CC;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 11s linear 2.5s infinite"></div>
+      <div style="position:absolute;top:-30px;left:38%;width:16px;height:13.6px;background:#F9E8E8;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 8s linear 1.2s infinite"></div>
+      <div style="position:absolute;top:-30px;left:55%;width:9px;height:7.65px;background:#FADDE2;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 12s linear 3.8s infinite"></div>
+      <div style="position:absolute;top:-30px;left:70%;width:13px;height:11.05px;background:#F4C3CC;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 10s linear 0.6s infinite"></div>
+      <div style="position:absolute;top:-30px;left:84%;width:11px;height:9.35px;background:#F9E8E8;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 9s linear 2.1s infinite"></div>
+      <div style="position:absolute;top:-30px;left:15%;width:8px;height:6.8px;background:#FADDE2;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 13s linear 4.5s infinite"></div>
+      <div style="position:absolute;top:-30px;left:92%;width:15px;height:12.75px;background:#F4C3CC;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 11s linear 1.8s infinite"></div>
+      <div style="position:absolute;top:-30px;left:47%;width:12px;height:10.2px;background:#F9E8E8;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 10s linear 5.2s infinite"></div>
+      <div style="position:absolute;top:-30px;left:63%;width:8px;height:6.8px;background:#FADDE2;border-radius:62% 38% 58% 42% / 50% 60% 40% 50%;animation:komartPetal 12s linear 3.1s infinite"></div>
+    </div>
+
+    <div class="kom-scroll" style="display:flex;flex-direction:column">
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:0 40px;min-height:calc(100vh - 120px)">
+        <div style="width:84px;height:84px;border-radius:26px;background:#2B2723;color:#FFFDFB;display:grid;place-items:center;font-size:40px;font-weight:800;box-shadow:0 20px 40px -18px rgba(43,39,35,.5)">K</div>
+        <div style="font-size:40px;font-weight:800;letter-spacing:-.03em;margin-top:22px">KoMart</div>
+        <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:14px;font-weight:500;letter-spacing:.42em;color:#8C6F5A;margin-top:6px;text-indent:.42em">코 마 트</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:26px">
+          <div style="width:10px;height:10px;border-radius:99px;background:#B05468"></div>
+          <div style="width:54px;height:2px;border-radius:99px;background:#D9CFC2"></div>
+          <div style="width:10px;height:10px;border-radius:99px;background:#3F7330"></div>
+        </div>
+        <div style="font-size:15px;font-weight:600;color:#6E675C;margin-top:14px">Два мира — одно приложение</div>
+      </div>
+      <div style="padding:0 40px 28px;display:flex;flex-direction:column;align-items:center;gap:14px">
+        <div style="width:128px;height:4px;border-radius:99px;background:rgba(43,39,35,.12);overflow:hidden"><div style="width:62%;height:100%;border-radius:99px;background:#2B2723"></div></div>
+        <div style="font-size:11.5px;font-weight:600;color:#9A9183">Ташкент · оригинальные товары из Кореи</div>
+      </div>
+    </div>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

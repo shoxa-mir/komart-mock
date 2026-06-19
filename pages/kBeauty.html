@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · K-Beauty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-tab="home" data-page="kBeauty" style="background:#FFFDFB;color:#2B2723">
+  <div class="kom-app" style="background:#FFFDFB">
+
+    <div class="ios-status" style="color:#2B2723">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <main class="kom-scroll kom-scroll--with-tabs">
+
+      <div style="background:linear-gradient(180deg,#FBEFF1,#FFFDFB 88%);margin:0 -1px;padding-bottom:6px">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 20px 0">
+          <a class="kom-back tap" data-back="home.html" href="home.html" aria-label="Назад" style="background:transparent;border:0;color:#2B2723">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+          </a>
+          <div style="display:flex;align-items:center;gap:8px"><div style="font-size:18px;font-weight:800;letter-spacing:-.01em">K-Beauty</div><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:12px;font-weight:500;color:#B05468">뷰티</div></div>
+          <a class="tap" href="search.html" aria-label="Поиск" style="display:grid;place-items:center;width:32px;height:32px;color:#2B2723">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          </a>
+        </div>
+
+        <!-- hero -->
+        <div style="margin:16px 20px 0;background:linear-gradient(135deg,#FADDE2,#F6CBD3 70%);border:1px solid #F2D2D8;border-radius:24px;padding:20px;position:relative;overflow:hidden">
+          <div style="position:absolute;right:-6px;bottom:-18px;font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:84px;font-weight:700;color:rgba(255,255,255,.4)">빛</div>
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#8E3B4D">СИЯНИЕ ПО-КОРЕЙСКИ</div>
+          <div style="font-size:22px;font-weight:800;line-height:1.2;margin-top:6px;max-width:230px">Ритуал ухода<br/>из Сеула</div>
+          <div style="font-size:12px;font-weight:600;color:#8E3B4D;margin-top:6px">Скидки до −30% на бестселлеры</div>
+          <div style="display:inline-block;background:#B05468;color:#fff;border-radius:99px;padding:10px 20px;font-size:13px;font-weight:800;margin-top:14px">Смотреть подборку</div>
+        </div>
+
+        <!-- category chips -->
+        <div style="display:flex;gap:8px;padding:14px 20px 10px;overflow-x:auto">
+          <div style="flex:none;background:#B05468;color:#fff;border-radius:99px;padding:9px 16px;font-size:12.5px;font-weight:800">Уход</div>
+          <div style="flex:none;background:#fff;border:1px solid #F2D2D8;border-radius:99px;padding:9px 16px;font-size:12.5px;font-weight:700;color:#8E3B4D">Тонеры</div>
+          <div style="flex:none;background:#fff;border:1px solid #F2D2D8;border-radius:99px;padding:9px 16px;font-size:12.5px;font-weight:700;color:#8E3B4D">Сыворотки</div>
+          <div style="flex:none;background:#fff;border:1px solid #F2D2D8;border-radius:99px;padding:9px 16px;font-size:12.5px;font-weight:700;color:#8E3B4D">Маски</div>
+          <div style="flex:none;background:#fff;border:1px solid #F2D2D8;border-radius:99px;padding:9px 16px;font-size:12.5px;font-weight:700;color:#8E3B4D">SPF</div>
+        </div>
+      </div>
+
+      <!-- bestsellers grid -->
+      <div style="padding:8px 20px 0">
+        <div style="display:flex;align-items:baseline;justify-content:space-between"><div style="font-size:17px;font-weight:800">Бестселлеры Кореи</div><div style="font-size:12.5px;font-weight:700;color:#8C6F5A">Все →</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:12px">
+          <a class="tap" href="product.html" data-product-id="centella-cream" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:18px;overflow:hidden;box-shadow:0 10px 22px -16px rgba(176,84,104,.35);position:relative">
+            <div style="position:relative;height:128px;background:linear-gradient(160deg,#FBEFF0,#F4D9DD)">
+              <div style="position:absolute;top:9px;left:9px;background:#B05468;color:#fff;border-radius:8px;padding:3px 7px;font-size:10px;font-weight:800">−17%</div>
+              <button class="fav-btn tap" data-fav-toggle data-fav-id="centella-cream" aria-pressed="false" aria-label="В избранное" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0;cursor:pointer"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="#B05468" stroke="#B05468" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+              <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:52px;height:46px;background:rgba(255,255,255,.92);border:1px solid #F2D2D8;border-radius:12px"><div style="position:absolute;top:-8px;left:12px;width:28px;height:8px;background:#B05468;border-radius:4px 4px 0 0"></div><div style="position:absolute;inset:0;display:grid;place-items:center;font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:9px;color:#B05468;font-weight:700">센텔라</div></div>
+            </div>
+            <div style="padding:11px 12px 12px">
+              <div style="font-size:12.5px;font-weight:700;line-height:1.35;height:34px;overflow:hidden">Увлажняющий крем с центеллой</div>
+              <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;color:#9A9183;margin-top:2px">센텔라 수딩 크림</div>
+              <div style="display:flex;align-items:center;gap:4px;margin-top:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#E8A33D"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21l1.4-7L2 9.4l7-.8z"/></svg><div style="font-size:11px;font-weight:700">4.8</div><div style="font-size:11px;font-weight:600;color:#9A9183">· 243</div></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:7px">
+                <div><div style="font-size:13.5px;font-weight:800">189 000 so’m</div><div style="font-size:10.5px;font-weight:600;color:#9A9183;text-decoration:line-through">229 000 so’m</div></div>
+                <div style="width:30px;height:30px;border-radius:99px;background:#B05468;display:grid;place-items:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+              </div>
+              <div style="display:flex;gap:5px;margin-top:8px;flex-wrap:wrap"><div style="background:#FADDE2;color:#8E3B4D;border-radius:99px;padding:3px 8px;font-size:9.5px;font-weight:800">Korean Bestseller</div><div style="background:#FAF7F2;color:#8C6F5A;border-radius:99px;padding:3px 8px;font-size:9.5px;font-weight:700">Оригинал</div></div>
+            </div>
+          </a>
+          <a class="tap" href="product.html" data-product-id="vitc-serum-23" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:18px;overflow:hidden;box-shadow:0 10px 22px -16px rgba(176,84,104,.35);position:relative">
+            <div style="position:relative;height:128px;background:linear-gradient(160deg,#FFF6E8,#F8E3BC)">
+              <div style="position:absolute;top:9px;left:9px;background:#B05468;color:#fff;border-radius:8px;padding:3px 7px;font-size:10px;font-weight:800">−15%</div>
+              <button class="fav-btn tap" data-fav-toggle data-fav-id="vitc-serum-23" aria-pressed="false" aria-label="В избранное" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0;cursor:pointer"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B05468" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+              <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:34px;height:62px;background:rgba(255,255,255,.92);border:1px solid #F0DFC0;border-radius:8px"><div style="position:absolute;top:-9px;left:8px;width:18px;height:9px;background:#E0A33C;border-radius:4px 4px 0 0"></div><div style="position:absolute;inset:0;display:grid;place-items:center;font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:8.5px;color:#B7791F;font-weight:700;writing-mode:vertical-rl">비타민C</div></div>
+            </div>
+            <div style="padding:11px 12px 12px">
+              <div style="font-size:12.5px;font-weight:700;line-height:1.35;height:34px;overflow:hidden">Сыворотка с витамином C 23%</div>
+              <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;color:#9A9183;margin-top:2px">비타민C 세럼</div>
+              <div style="display:flex;align-items:center;gap:4px;margin-top:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#E8A33D"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21l1.4-7L2 9.4l7-.8z"/></svg><div style="font-size:11px;font-weight:700">4.6</div><div style="font-size:11px;font-weight:600;color:#9A9183">· 388</div></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:7px">
+                <div><div style="font-size:13.5px;font-weight:800">219 000 so’m</div><div style="font-size:10.5px;font-weight:600;color:#9A9183;text-decoration:line-through">259 000 so’m</div></div>
+                <div style="width:30px;height:30px;border-radius:99px;background:#B05468;display:grid;place-items:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+              </div>
+              <div style="display:flex;gap:5px;margin-top:8px;flex-wrap:wrap"><div style="background:#FADDE2;color:#8E3B4D;border-radius:99px;padding:3px 8px;font-size:9.5px;font-weight:800">Glow Pick</div><div style="background:#FAF7F2;color:#8C6F5A;border-radius:99px;padding:3px 8px;font-size:9.5px;font-weight:700">Dermatology Inspired</div></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- routine editorial -->
+      <div style="padding:18px 20px 22px">
+        <div style="background:#FAF7F2;border:1px solid #EFE9DF;border-radius:22px;padding:18px">
+          <div style="font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#B05468">БЬЮТИ-РИТУАЛ</div>
+          <div style="font-size:17px;font-weight:800;margin-top:4px">Вечерний уход за 4 шага</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px">
+            <div style="background:#fff;border:1px solid #F3E7E6;border-radius:14px;padding:10px 8px;text-align:center"><div style="width:26px;height:26px;border-radius:99px;background:#FADDE2;color:#8E3B4D;font-size:12px;font-weight:800;display:grid;place-items:center;margin:0 auto">1</div><div style="font-size:10.5px;font-weight:700;margin-top:6px">Пенка</div></div>
+            <div style="background:#fff;border:1px solid #F3E7E6;border-radius:14px;padding:10px 8px;text-align:center"><div style="width:26px;height:26px;border-radius:99px;background:#FADDE2;color:#8E3B4D;font-size:12px;font-weight:800;display:grid;place-items:center;margin:0 auto">2</div><div style="font-size:10.5px;font-weight:700;margin-top:6px">Тонер</div></div>
+            <div style="background:#fff;border:1px solid #F3E7E6;border-radius:14px;padding:10px 8px;text-align:center"><div style="width:26px;height:26px;border-radius:99px;background:#FADDE2;color:#8E3B4D;font-size:12px;font-weight:800;display:grid;place-items:center;margin:0 auto">3</div><div style="font-size:10.5px;font-weight:700;margin-top:6px">Сыворотка</div></div>
+            <div style="background:#fff;border:1px solid #F3E7E6;border-radius:14px;padding:10px 8px;text-align:center"><div style="width:26px;height:26px;border-radius:99px;background:#FADDE2;color:#8E3B4D;font-size:12px;font-weight:800;display:grid;place-items:center;margin:0 auto">4</div><div style="font-size:10.5px;font-weight:700;margin-top:6px">Крем</div></div>
+          </div>
+          <div style="font-size:12px;font-weight:700;color:#8C6F5A;margin-top:12px">Собрать ритуал со скидкой −10% →</div>
+        </div>
+      </div>
+
+    </main>
+
+    <nav class="kom-tabs" aria-label="Главная навигация">
+      <a class="kom-tab" data-tab="home" href="home.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        <span>Главная</span>
+      </a>
+      <a class="kom-tab" data-tab="categories" href="categories.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+        <span>Каталог</span>
+      </a>
+      <a class="kom-tab" data-tab="cart" href="cart.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1 13H6L5 7z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg>
+        <span>Корзина</span>
+        <span class="badge"></span>
+      </a>
+      <a class="kom-tab" data-tab="favorites" href="favorites.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 6.6a5.5 5.5 0 00-9.3-2.4l-.7.7-.7-.7a5.5 5.5 0 10-7.8 7.8l8.5 8.5 8.5-8.5a5.5 5.5 0 001.5-5.4z"/></svg>
+        <span>Избранное</span>
+      </a>
+      <a class="kom-tab" data-tab="profile" href="profile.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <span>Профиль</span>
+      </a>
+    </nav>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · Заказ оформлен</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-tab="none" data-page="orderPlaced" style="background:#FFFDFB">
+  <div class="kom-app" style="background:#FFFDFB">
+
+    <div class="ios-status">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="kom-scroll">
+      <div style="display:flex;flex-direction:column;align-items:center;padding:30px 24px 0;text-align:center">
+        <div style="width:72px;height:72px;border-radius:99px;background:#EFF7E4;border:2px solid #B5E18B;display:grid;place-items:center"><div style="width:44px;height:44px;border-radius:99px;background:#3F7330;display:grid;place-items:center"><svg width="20" height="16" viewBox="0 0 12 10" fill="none"><path d="M1.5 5.4 4.4 8.2 10.5 1.6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+        <div style="font-size:23px;font-weight:800;letter-spacing:-.02em;margin-top:16px">Заказ оформлен!</div>
+        <div style="font-size:13px;font-weight:600;color:#6E675C;margin-top:6px">Заказ <span style="font-weight:800;color:#2B2723">№KM-20486</span> · оплачен через Payme</div>
+        <div style="display:flex;align-items:center;gap:7px;background:#FAF7F2;border:1px solid #EFE9DF;border-radius:99px;padding:8px 16px;margin-top:12px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8C6F5A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg>
+          <div style="font-size:12px;font-weight:800">Доставим завтра, 14:00–18:00</div>
+        </div>
+      </div>
+      <div style="margin:24px 20px 0;background:#fff;border:1px solid #F0EAE0;border-radius:20px;padding:18px">
+        <div style="font-size:13px;font-weight:800;letter-spacing:.03em;color:#6E675C">СТАТУС ЗАКАЗА</div>
+        <div style="display:flex;flex-direction:column;margin-top:14px">
+          <div style="display:flex;gap:13px">
+            <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:99px;background:#3F7330;display:grid;place-items:center;flex:none"><svg width="11" height="9" viewBox="0 0 12 10" fill="none"><path d="M1.5 5.4 4.4 8.2 10.5 1.6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div style="width:2.5px;flex:1;background:#3F7330;min-height:26px"></div></div>
+            <div style="padding-bottom:16px"><div style="font-size:13px;font-weight:800">Заказ оформлен</div><div style="font-size:11px;font-weight:600;color:#9A9183;margin-top:2px">Сегодня, 9:41 · оплата подтверждена</div></div>
+          </div>
+          <div style="display:flex;gap:13px">
+            <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:99px;background:#fff;border:2.5px solid #3F7330;display:grid;place-items:center;flex:none"><div style="width:9px;height:9px;border-radius:99px;background:#3F7330"></div></div><div style="width:2.5px;flex:1;background:#EAE3D8;min-height:26px"></div></div>
+            <div style="padding-bottom:16px"><div style="font-size:13px;font-weight:800;color:#3F7330">Собирается на складе</div><div style="font-size:11px;font-weight:600;color:#9A9183;margin-top:2px">Проверяем сроки годности и комплектацию</div></div>
+          </div>
+          <div style="display:flex;gap:13px">
+            <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:99px;background:#fff;border:2px solid #EAE3D8;flex:none"></div><div style="width:2.5px;flex:1;background:#EAE3D8;min-height:26px"></div></div>
+            <div style="padding-bottom:16px"><div style="font-size:13px;font-weight:700;color:#9A9183">Передан курьеру</div><div style="font-size:11px;font-weight:600;color:#C3BBAD;margin-top:2px">Курьер позвонит за 30 минут</div></div>
+          </div>
+          <div style="display:flex;gap:13px">
+            <div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;border-radius:99px;background:#fff;border:2px solid #EAE3D8;flex:none"></div></div>
+            <div><div style="font-size:13px;font-weight:700;color:#9A9183">Доставлен</div><div style="font-size:11px;font-weight:600;color:#C3BBAD;margin-top:2px">Завтра, 14:00–18:00</div></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin:14px 20px 0;background:#FAF7F2;border:1px solid #EFE9DF;border-radius:18px;padding:15px 16px;display:flex;flex-direction:column;gap:9px">
+        <div style="display:flex;justify-content:space-between;font-size:12.5px"><div style="font-weight:600;color:#6E675C">Адрес</div><div style="font-weight:700;text-align:right">ул. Амира Темура 88, кв. 14</div></div>
+        <div style="display:flex;justify-content:space-between;font-size:12.5px"><div style="font-weight:600;color:#6E675C">Получатель</div><div style="font-weight:700">Азиза · +998 90 ··· ·· 56</div></div>
+        <div style="display:flex;justify-content:space-between;font-size:12.5px"><div style="font-weight:600;color:#6E675C">Сумма</div><div style="font-weight:800">547 000 so’m · доставка 0 so’m</div></div>
+      </div>
+      <div style="display:flex;gap:10px;margin:16px 20px 22px">
+        <div class="tap" style="flex:1;border:2px solid #2B2723;background:#fff;border-radius:15px;padding:14px;text-align:center;font-size:13px;font-weight:800">Связаться с поддержкой</div>
+        <a class="tap" href="home.html" style="flex:1;background:#2B2723;color:#fff;border-radius:15px;padding:14px;text-align:center;font-size:13px;font-weight:800">На главную</a>
+      </div>
+    </div>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · Рамен</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-tab="categories" data-page="ramenSubcategory" style="background:#FFFDFB;color:#2B2723">
+  <div class="kom-app" style="background:#FFFDFB">
+
+    <div class="ios-status" style="color:#2B2723">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <main class="kom-scroll kom-scroll--with-tabs">
+
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 20px 0">
+        <a class="kom-back tap" data-back="categories.html" href="categories.html" aria-label="Назад" style="background:transparent;border:0;color:#2B2723">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+        </a>
+        <div style="text-align:center"><div style="font-size:17px;font-weight:800">Рамен</div><div style="font-size:11px;font-weight:600;color:#9A9183">48 товаров · K-Store</div></div>
+        <a class="tap" href="search.html" aria-label="Поиск" style="display:grid;place-items:center;width:32px;height:32px;color:#2B2723">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </a>
+      </div>
+
+      <div style="display:flex;gap:8px;padding:14px 20px 0;overflow-x:auto">
+        <div style="flex:none;display:flex;align-items:center;gap:5px;background:#fff;border:1.5px solid #2B2723;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:800"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2B2723" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>Сортировка: популярные</div>
+        <div style="flex:none;background:#3F7330;color:#fff;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:800">Острые</div>
+        <div style="flex:none;background:#fff;border:1px solid #EAE3D8;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:700;color:#6E675C">Halal</div>
+        <div style="flex:none;background:#fff;border:1px solid #EAE3D8;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:700;color:#6E675C">До 50 000</div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;padding:16px 20px 22px">
+
+        <a class="tap" href="product.html" data-product-id="kimchi-ramen" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:18px;overflow:hidden;position:relative">
+          <div style="position:relative;height:118px;background:linear-gradient(160deg,#FBE9DC,#F3C8B2)">
+            <div style="position:absolute;top:9px;left:9px;background:#C04A3A;color:#fff;border-radius:8px;padding:3px 7px;font-size:10px;font-weight:800">−13%</div>
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="kimchi-ramen" aria-pressed="false" aria-label="В избранное" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0;cursor:pointer"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3F7330" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:50px;height:60px;background:linear-gradient(165deg,#D8442E,#A93223);border-radius:9px;display:grid;place-items:center"><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;font-weight:700;color:#FFE9DF">김치라면</div></div>
+          </div>
+          <div style="padding:11px 12px 12px">
+            <div style="font-size:12.5px;font-weight:700;line-height:1.35;height:34px;overflow:hidden">Острый рамен кимчи</div>
+            <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;color:#9A9183;margin-top:2px">김치라면</div>
+            <div style="display:flex;align-items:center;gap:4px;margin-top:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#E8A33D"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21l1.4-7L2 9.4l7-.8z"/></svg><div style="font-size:11px;font-weight:700">4.8</div><div style="font-size:11px;font-weight:600;color:#9A9183">· 765</div><div style="margin-left:auto;display:flex;align-items:center;gap:2px"><svg width="10" height="10" viewBox="0 0 24 24" fill="#C04A3A"><path d="M13 2c1.5 3.5-2.5 5-2.5 8.5a4.5 4.5 0 0 0 9 .5c1.8 2 2.5 4 2.5 6a8 8 0 1 1-16 0C6 11 11 9 13 2z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="#C04A3A"><path d="M13 2c1.5 3.5-2.5 5-2.5 8.5a4.5 4.5 0 0 0 9 .5c1.8 2 2.5 4 2.5 6a8 8 0 1 1-16 0C6 11 11 9 13 2z"/></svg></div></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:7px">
+              <div><div style="font-size:13.5px;font-weight:800">39 000 so’m</div><div style="font-size:10.5px;font-weight:600;color:#9A9183;text-decoration:line-through">45 000 so’m</div></div>
+              <div style="width:30px;height:30px;border-radius:99px;background:#3F7330;display:grid;place-items:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="tap" href="product.html" data-product-id="buldak-ramen" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:18px;overflow:hidden;position:relative">
+          <div style="position:relative;height:118px;background:linear-gradient(160deg,#FBE3E0,#EFB6AE)">
+            <div style="position:absolute;top:9px;left:9px;background:#B5E18B;color:#2F5424;border-radius:8px;padding:3px 7px;font-size:10px;font-weight:800">ХИТ</div>
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="buldak-ramen" aria-pressed="false" aria-label="В избранное" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0;cursor:pointer"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="#3F7330" stroke="#3F7330" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:50px;height:60px;background:linear-gradient(165deg,#2B2723,#4A3530);border-radius:9px;display:grid;place-items:center"><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:11px;font-weight:700;color:#F6C8C0">불닭</div></div>
+          </div>
+          <div style="padding:11px 12px 12px">
+            <div style="font-size:12.5px;font-weight:700;line-height:1.35;height:34px;overflow:hidden">Рамен Бульдак очень острый</div>
+            <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;color:#9A9183;margin-top:2px">불닭볶음면</div>
+            <div style="display:flex;align-items:center;gap:4px;margin-top:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#E8A33D"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21l1.4-7L2 9.4l7-.8z"/></svg><div style="font-size:11px;font-weight:700">4.9</div><div style="font-size:11px;font-weight:600;color:#9A9183">· 1 024</div><div style="margin-left:auto;display:flex;align-items:center;gap:2px"><svg width="10" height="10" viewBox="0 0 24 24" fill="#C04A3A"><path d="M13 2c1.5 3.5-2.5 5-2.5 8.5a4.5 4.5 0 0 0 9 .5c1.8 2 2.5 4 2.5 6a8 8 0 1 1-16 0C6 11 11 9 13 2z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="#C04A3A"><path d="M13 2c1.5 3.5-2.5 5-2.5 8.5a4.5 4.5 0 0 0 9 .5c1.8 2 2.5 4 2.5 6a8 8 0 1 1-16 0C6 11 11 9 13 2z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="#C04A3A"><path d="M13 2c1.5 3.5-2.5 5-2.5 8.5a4.5 4.5 0 0 0 9 .5c1.8 2 2.5 4 2.5 6a8 8 0 1 1-16 0C6 11 11 9 13 2z"/></svg></div></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:7px">
+              <div><div style="font-size:13.5px;font-weight:800">42 000 so’m</div><div style="font-size:10.5px;font-weight:600;color:#3F7330">В наличии</div></div>
+              <div style="width:30px;height:30px;border-radius:99px;background:#3F7330;display:grid;place-items:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="tap" href="product.html" data-product-id="jjajang-ramen" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:18px;overflow:hidden;position:relative">
+          <div style="position:relative;height:118px;background:linear-gradient(160deg,#FDF0E4,#F6D9B5)">
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="jjajang-ramen" aria-pressed="false" aria-label="В избранное" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0;cursor:pointer"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3F7330" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:50px;height:60px;background:linear-gradient(165deg,#E0A33C,#C27E1E);border-radius:9px;display:grid;place-items:center"><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;font-weight:700;color:#FFF3DC">짜장면</div></div>
+          </div>
+          <div style="padding:11px 12px 12px">
+            <div style="font-size:12.5px;font-weight:700;line-height:1.35;height:34px;overflow:hidden">Рамен чачжан с чёрной фасолью</div>
+            <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;color:#9A9183;margin-top:2px">짜장라면</div>
+            <div style="display:flex;align-items:center;gap:4px;margin-top:6px"><svg width="11" height="11" viewBox="0 0 24 24" fill="#E8A33D"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21l1.4-7L2 9.4l7-.8z"/></svg><div style="font-size:11px;font-weight:700">4.6</div><div style="font-size:11px;font-weight:600;color:#9A9183">· 214</div><div style="margin-left:auto;display:flex;align-items:center;gap:2px"><svg width="10" height="10" viewBox="0 0 24 24" fill="#C04A3A"><path d="M13 2c1.5 3.5-2.5 5-2.5 8.5a4.5 4.5 0 0 0 9 .5c1.8 2 2.5 4 2.5 6a8 8 0 1 1-16 0C6 11 11 9 13 2z"/></svg></div></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:7px">
+              <div><div style="font-size:13.5px;font-weight:800">41 000 so’m</div><div style="font-size:10.5px;font-weight:600;color:#3F7330">В наличии</div></div>
+              <div style="width:30px;height:30px;border-radius:99px;background:#3F7330;display:grid;place-items:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+            </div>
+          </div>
+        </a>
+
+        <a class="tap" href="product.html" data-product-id="cheese-cup-ramen" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:18px;overflow:hidden;position:relative">
+          <div style="position:relative;height:118px;background:linear-gradient(160deg,#EDEAE3,#DCD6CA)">
+            <div style="position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:50px;height:60px;background:linear-gradient(165deg,#B0A89A,#8F8678);border-radius:9px;display:grid;place-items:center;opacity:.7"><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;font-weight:700;color:#F4F0E8">컵라면</div></div>
+          </div>
+          <div style="padding:11px 12px 12px">
+            <div style="font-size:12.5px;font-weight:700;line-height:1.35;height:34px;overflow:hidden;color:#9A9183">Рамен в стакане с сыром</div>
+            <div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10.5px;color:#C3BBAD;margin-top:2px">치즈 컵라면</div>
+            <div style="display:flex;align-items:center;gap:5px;margin-top:8px"><div style="width:7px;height:7px;border-radius:99px;background:#C04A3A"></div><div style="font-size:11px;font-weight:800;color:#C04A3A">Нет в наличии</div></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:7px">
+              <div style="font-size:13.5px;font-weight:800;color:#9A9183">36 000 so’m</div>
+              <div style="border:1.5px solid #EAE3D8;color:#8C6F5A;border-radius:99px;padding:6px 10px;font-size:10px;font-weight:800">Сообщить</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </main>
+
+    <nav class="kom-tabs" aria-label="Главная навигация">
+      <a class="kom-tab" data-tab="home" href="home.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        <span>Главная</span>
+      </a>
+      <a class="kom-tab" data-tab="categories" href="categories.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+        <span>Каталог</span>
+      </a>
+      <a class="kom-tab" data-tab="cart" href="cart.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1 13H6L5 7z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg>
+        <span>Корзина</span>
+        <span class="badge"></span>
+      </a>
+      <a class="kom-tab" data-tab="favorites" href="favorites.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 6.6a5.5 5.5 0 00-9.3-2.4l-.7.7-.7-.7a5.5 5.5 0 10-7.8 7.8l8.5 8.5 8.5-8.5a5.5 5.5 0 001.5-5.4z"/></svg>
+        <span>Избранное</span>
+      </a>
+      <a class="kom-tab" data-tab="profile" href="profile.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <span>Профиль</span>
+      </a>
+    </nav>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · Избранное</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-tab="favorites" data-page="favorites" style="background:#FFFDFB">
+  <div class="kom-app" style="background:#FFFDFB">
+
+    <div class="ios-status">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="kom-scroll kom-scroll--with-tabs">
+      <div style="padding:10px 20px 0;font-size:23px;font-weight:800;letter-spacing:-.02em">Избранное <span style="font-size:14px;color:#9A9183;font-weight:700">· 4</span></div>
+      <div style="display:flex;gap:8px;padding:14px 20px 0">
+        <div style="background:#2B2723;color:#fff;border-radius:99px;padding:8px 16px;font-size:12.5px;font-weight:800">Все</div>
+        <div style="background:#fff;border:1px solid #F2D2D8;border-radius:99px;padding:8px 16px;font-size:12.5px;font-weight:700;color:#8E3B4D">K-Beauty · 3</div>
+        <div style="background:#fff;border:1px solid #BFDD9C;border-radius:99px;padding:8px 16px;font-size:12.5px;font-weight:700;color:#2F5424">K-Store · 1</div>
+      </div>
+      <div style="margin:14px 20px 0;display:flex;align-items:center;gap:10px;background:#FBEFF1;border:1px solid #F2D2D8;border-radius:15px;padding:11px 14px">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B05468" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l6 6 4-4 8 8"/><path d="M21 11v6h-6"/></svg>
+        <div style="font-size:11.5px;font-weight:700;color:#8E3B4D">Цена на 1 товар из избранного снизилась</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;padding:14px 20px 22px">
+        <a class="tap" href="product.html" data-product-id="cica-cream" style="display:block;background:#fff;border:1px solid #F3E7E6;border-radius:18px;overflow:hidden">
+          <div style="position:relative;height:112px;background:linear-gradient(160deg,#FBEFF0,#F4D9DD)">
+            <div style="position:absolute;top:9px;left:9px;background:#B05468;color:#fff;border-radius:8px;padding:3px 7px;font-size:10px;font-weight:800">Цена ↓</div>
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="cica-cream" aria-pressed="true" aria-label="Убрать из избранного" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="#B05468" stroke="#B05468" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:9px;transform:translateX(-50%);width:44px;height:40px;background:rgba(255,255,255,.94);border:1px solid #F2D2D8;border-radius:10px"><div style="position:absolute;top:-7px;left:10px;width:24px;height:7px;background:#B05468;border-radius:4px 4px 0 0"></div></div>
+          </div>
+          <div style="padding:10px 12px 12px">
+            <div style="font-size:12px;font-weight:700;line-height:1.35;height:32px;overflow:hidden">Увлажняющий крем с центеллой</div>
+            <div style="display:flex;align-items:baseline;gap:6px;margin-top:5px"><div style="font-size:13px;font-weight:800;color:#B05468">189 000 so’m</div><div style="font-size:10px;font-weight:600;color:#9A9183;text-decoration:line-through">229 000</div></div>
+            <div style="margin-top:8px;background:#B05468;color:#fff;border-radius:11px;padding:9px;text-align:center;font-size:11px;font-weight:800">В корзину</div>
+          </div>
+        </a>
+        <a class="tap" href="product.html" data-product-id="buldak-ramen" style="display:block;background:#fff;border:1px solid #E7F0DC;border-radius:18px;overflow:hidden">
+          <div style="position:relative;height:112px;background:linear-gradient(160deg,#FBE3E0,#EFB6AE)">
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="buldak-ramen" aria-pressed="true" aria-label="Убрать из избранного" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="#3F7330" stroke="#3F7330" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:9px;transform:translateX(-50%);width:42px;height:50px;background:linear-gradient(165deg,#2B2723,#4A3530);border-radius:8px;display:grid;place-items:center"><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:10px;font-weight:700;color:#F6C8C0">불닭</div></div>
+          </div>
+          <div style="padding:10px 12px 12px">
+            <div style="font-size:12px;font-weight:700;line-height:1.35;height:32px;overflow:hidden">Рамен Бульдак очень острый</div>
+            <div style="font-size:13px;font-weight:800;margin-top:5px">42 000 so’m</div>
+            <div style="margin-top:8px;background:#3F7330;color:#fff;border-radius:11px;padding:9px;text-align:center;font-size:11px;font-weight:800">В корзину</div>
+          </div>
+        </a>
+        <a class="tap" href="product.html" data-product-id="aloe-mask" style="display:block;background:#fff;border:1px solid #F3E7E6;border-radius:18px;overflow:hidden">
+          <div style="position:relative;height:112px;background:linear-gradient(160deg,#F2F7EE,#DCEAD2)">
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="aloe-mask" aria-pressed="true" aria-label="Убрать из избранного" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="#B05468" stroke="#B05468" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:9px;transform:translateX(-50%);width:46px;height:34px;background:rgba(255,255,255,.94);border:1px solid #D9E6CF;border-radius:8px;display:grid;place-items:center"><div style="font-family:'Noto Sans KR','Malgun Gothic',sans-serif;font-size:8px;color:#55703F;font-weight:700">마스크</div></div>
+          </div>
+          <div style="padding:10px 12px 12px">
+            <div style="font-size:12px;font-weight:700;line-height:1.35;height:32px;overflow:hidden">Тканевая маска с алоэ</div>
+            <div style="font-size:13px;font-weight:800;margin-top:5px">19 000 so’m</div>
+            <div style="margin-top:8px;background:#B05468;color:#fff;border-radius:11px;padding:9px;text-align:center;font-size:11px;font-weight:800">В корзину</div>
+          </div>
+        </a>
+        <a class="tap" href="product.html" data-product-id="snail-mucin-toner" style="display:block;background:#fff;border:1px solid #F3E7E6;border-radius:18px;overflow:hidden;position:relative">
+          <div style="position:relative;height:112px;background:linear-gradient(160deg,#EDEAE3,#DCD6CA)">
+            <button class="fav-btn tap" data-fav-toggle data-fav-id="snail-mucin-toner" aria-pressed="true" aria-label="Убрать из избранного" onclick="event.preventDefault();event.stopPropagation()" style="position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;padding:0"><svg class="fav-icon" width="13" height="13" viewBox="0 0 24 24" fill="#B05468" stroke="#B05468" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5l-7.2-7A4.6 4.6 0 0 1 11.3 7l.7.7.7-.7a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button>
+            <div style="position:absolute;left:50%;bottom:9px;transform:translateX(-50%);width:30px;height:50px;background:rgba(255,255,255,.7);border:1px solid #DCD6CA;border-radius:7px;opacity:.7"></div>
+          </div>
+          <div style="padding:10px 12px 12px">
+            <div style="font-size:12px;font-weight:700;line-height:1.35;height:32px;overflow:hidden;color:#9A9183">Тонер с муцином улитки</div>
+            <div style="font-size:11px;font-weight:800;color:#C04A3A;margin-top:5px">Нет в наличии</div>
+            <div style="margin-top:8px;border:1.5px solid #EAE3D8;color:#8C6F5A;border-radius:11px;padding:8px;text-align:center;font-size:11px;font-weight:800">Сообщить о поступлении</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <nav class="kom-tabs" aria-label="Главная навигация">
+      <a class="kom-tab" data-tab="home" href="home.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        <span>Главная</span>
+      </a>
+      <a class="kom-tab" data-tab="categories" href="categories.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        <span>Каталог</span>
+      </a>
+      <a class="kom-tab" data-tab="cart" href="cart.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1 13H6L5 7z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg>
+        <span>Корзина</span>
+        <span class="badge"></span>
+      </a>
+      <a class="kom-tab" data-tab="favorites" href="favorites.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 6.6a5.5 5.5 0 00-9.3-2.4l-.7.7-.7-.7a5.5 5.5 0 10-7.8 7.8l8.5 8.5 8.5-8.5a5.5 5.5 0 001.5-5.4z"/></svg>
+        <span>Избранное</span>
+      </a>
+      <a class="kom-tab" data-tab="profile" href="profile.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <span>Профиль</span>
+      </a>
+    </nav>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

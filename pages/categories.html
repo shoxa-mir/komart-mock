@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · Категории</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-tab="categories" data-page="categories" style="background:#FFFDFB;color:#2B2723">
+  <div class="kom-app" style="background:#FFFDFB">
+
+    <div class="ios-status" style="color:#2B2723">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <main class="kom-scroll kom-scroll--with-tabs">
+
+      <div style="padding:10px 20px 0;font-size:23px;font-weight:800;letter-spacing:-.02em">Категории</div>
+      <div style="padding:12px 20px 0">
+        <a class="tap" href="search.html" style="display:flex;align-items:center;gap:10px;background:#F4F0E8;border:1px solid #EAE3D8;border-radius:16px;padding:13px 16px;text-decoration:none;color:inherit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8C6F5A" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <div style="font-size:13px;font-weight:600;color:#9A9183">Искать категорию…</div>
+        </a>
+      </div>
+
+      <!-- world switcher tabs -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:14px 20px 0">
+        <div style="background:#FADDE2;border:1.5px solid #B05468;border-radius:14px;padding:11px;text-align:center;font-size:13px;font-weight:800;color:#8E3B4D">K-Beauty</div>
+        <div style="background:#fff;border:1.5px solid #EAE3D8;border-radius:14px;padding:11px;text-align:center;font-size:13px;font-weight:700;color:#6E675C">K-Store</div>
+      </div>
+
+      <div style="padding:16px 20px 8px;font-size:13px;font-weight:800;color:#8E3B4D">K-BEAUTY · 10 КАТЕГОРИЙ</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 20px">
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FBEFF0,#F4D9DD);display:grid;place-items:center"><div style="width:18px;height:30px;background:rgba(255,255,255,.95);border:1px solid #F2D2D8;border-radius:5px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Уход</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FDF4EC,#F6DFC8);display:grid;place-items:center"><div style="width:24px;height:24px;background:rgba(255,255,255,.95);border:1px solid #F0DCC8;border-radius:99px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Тонеры</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FFF6E8,#F8E3BC);display:grid;place-items:center"><div style="width:14px;height:32px;background:rgba(255,255,255,.95);border:1px solid #F0DFC0;border-radius:4px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Сыворотки</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#F2F7EE,#DCEAD2);display:grid;place-items:center"><div style="width:30px;height:22px;background:rgba(255,255,255,.95);border:1px solid #D9E6CF;border-radius:6px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Маски</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FDF0E4,#F8D8B4);display:grid;place-items:center"><div style="width:18px;height:28px;background:rgba(255,255,255,.95);border:1px solid #F0DFC0;border-radius:5px 5px 8px 8px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">SPF</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #F3E7E6;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FBEFF0,#EFC9D2);display:grid;place-items:center"><div style="width:10px;height:30px;background:rgba(255,255,255,.95);border:1px solid #F2D2D8;border-radius:5px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Макияж</div></a>
+      </div>
+
+      <div style="padding:18px 20px 8px;font-size:13px;font-weight:800;color:#2F5424">K-STORE · 10 КАТЕГОРИЙ</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 20px 22px">
+        <a class="tap" href="ramenSubcategory.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FBE9DC,#F3C8B2);display:grid;place-items:center"><div style="width:26px;height:32px;background:linear-gradient(165deg,#E2573F,#B83A2C);border-radius:5px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Рамен</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FFF6E8,#F8E3BC);display:grid;place-items:center"><div style="width:24px;height:30px;background:linear-gradient(165deg,#F2B33D,#E08A28);border-radius:5px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Снэки</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#E8F3F5,#C7E2E8);display:grid;place-items:center"><div style="width:14px;height:30px;background:linear-gradient(180deg,#9FD8B4,#5EAE7C);border-radius:5px 5px 4px 4px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Напитки</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FDEBE7,#F5C3B8);display:grid;place-items:center"><div style="width:28px;height:18px;background:rgba(255,255,255,.95);border:1px solid #F0CFC4;border-radius:9px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Токпокки</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#F2F7EE,#DCEAD2);display:grid;place-items:center"><div style="width:28px;height:20px;background:#3A5F2C;border-radius:4px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Снэки нори</div></a>
+        <a class="tap" href="catalog.html" style="text-decoration:none;color:inherit;background:#fff;border:1px solid #E7F0DC;border-radius:16px;padding:12px 10px;text-align:center"><div style="height:54px;border-radius:12px;background:linear-gradient(160deg,#FDF3E3,#F4DCAE);display:grid;place-items:center"><div style="width:26px;height:26px;background:rgba(255,255,255,.95);border:1px solid #EFDDB5;border-radius:8px"></div></div><div style="font-size:11px;font-weight:700;margin-top:8px">Подарки</div></a>
+      </div>
+
+    </main>
+
+    <nav class="kom-tabs" aria-label="Главная навигация">
+      <a class="kom-tab" data-tab="home" href="home.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        <span>Главная</span>
+      </a>
+      <a class="kom-tab" data-tab="categories" href="categories.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+        <span>Каталог</span>
+      </a>
+      <a class="kom-tab" data-tab="cart" href="cart.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1 13H6L5 7z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg>
+        <span>Корзина</span>
+        <span class="badge"></span>
+      </a>
+      <a class="kom-tab" data-tab="favorites" href="favorites.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 6.6a5.5 5.5 0 00-9.3-2.4l-.7.7-.7-.7a5.5 5.5 0 10-7.8 7.8l8.5 8.5 8.5-8.5a5.5 5.5 0 001.5-5.4z"/></svg>
+        <span>Избранное</span>
+      </a>
+      <a class="kom-tab" data-tab="profile" href="profile.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <span>Профиль</span>
+      </a>
+    </nav>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

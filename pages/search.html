@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=402, initial-scale=1, viewport-fit=cover">
+<title>KoMart · Поиск</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shell.css">
+<script defer src="state.js"></script>
+<script defer src="shell.js"></script>
+</head>
+<body data-tab="none" data-page="search" style="background:#FFFDFB">
+  <div class="kom-app" style="background:#FFFDFB">
+
+    <div class="ios-status">
+      <span class="ios-time">9:41</span>
+      <div class="ios-island" aria-hidden="true"></div>
+      <div class="ios-right">
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" aria-hidden="true">
+          <rect x="0" y="7" width="3" height="4" rx="1" fill="currentColor"/>
+          <rect x="4.5" y="5" width="3" height="6" rx="1" fill="currentColor"/>
+          <rect x="9" y="3" width="3" height="8" rx="1" fill="currentColor"/>
+          <rect x="13.5" y="1" width="3" height="10" rx="1" fill="currentColor"/>
+        </svg>
+        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+          <path d="M1 4a10 10 0 0 1 13 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 6.5a6.5 6.5 0 0 1 8 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="7.5" cy="9" r="1.2" fill="currentColor"/>
+        </svg>
+        <svg width="24" height="11" viewBox="0 0 24 11" fill="none" aria-hidden="true">
+          <rect x="0.5" y="0.5" width="20" height="10" rx="2.5" stroke="currentColor"/>
+          <rect x="2" y="2" width="15" height="7" rx="1.5" fill="currentColor"/>
+          <rect x="21.5" y="3" width="2" height="5" rx="1" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="kom-scroll">
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 20px 0">
+        <a class="kom-back tap" data-back="home.html" href="home.html" aria-label="Назад" style="flex:none">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B2723" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+        </a>
+        <div style="flex:1;display:flex;align-items:center;gap:10px;background:#fff;border:2px solid #2B2723;border-radius:16px;padding:13px 16px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2B2723" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <div style="font-size:14px;font-weight:700">сыв<span style="display:inline-block;width:2px;height:18px;background:#B05468;vertical-align:-3px;margin-left:1px"></span></div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.4" stroke-linecap="round" style="margin-left:auto"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;padding:14px 20px 0">
+        <a class="tap" href="product.html" data-product-id="vitamin-c-serum" style="display:flex;align-items:center;gap:11px;padding:13px 4px;border-bottom:1px solid #F4EFE6">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <div style="font-size:13.5px;font-weight:600"><span style="font-weight:800;color:#B05468">сыв</span>оротка с витамином C</div>
+          <div style="margin-left:auto;font-size:10.5px;font-weight:700;color:#9A9183">K-Beauty</div>
+        </a>
+        <a class="tap" href="product.html" data-product-id="snail-mucin-serum" style="display:flex;align-items:center;gap:11px;padding:13px 4px;border-bottom:1px solid #F4EFE6">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <div style="font-size:13.5px;font-weight:600"><span style="font-weight:800;color:#B05468">сыв</span>оротка с муцином улитки</div>
+          <div style="margin-left:auto;font-size:10.5px;font-weight:700;color:#9A9183">K-Beauty</div>
+        </a>
+        <a class="tap" href="product.html" data-product-id="retinol-serum" style="display:flex;align-items:center;gap:11px;padding:13px 4px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <div style="font-size:13.5px;font-weight:600"><span style="font-weight:800;color:#B05468">сыв</span>оротка с ретинолом</div>
+          <div style="margin-left:auto;font-size:10.5px;font-weight:700;color:#9A9183">K-Beauty</div>
+        </a>
+      </div>
+      <div style="padding:18px 20px 0">
+        <div style="display:flex;align-items:baseline;justify-content:space-between"><div style="font-size:14px;font-weight:800">Недавние запросы</div><div style="font-size:11.5px;font-weight:700;color:#9A9183">Очистить</div></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:11px">
+          <div style="display:flex;align-items:center;gap:6px;background:#F4F0E8;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:700;color:#4A453D">рамен бульдак<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+          <div style="display:flex;align-items:center;gap:6px;background:#F4F0E8;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:700;color:#4A453D">тонер муцин<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+          <div style="display:flex;align-items:center;gap:6px;background:#F4F0E8;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:700;color:#4A453D">чоко пай<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+          <div style="display:flex;align-items:center;gap:6px;background:#F4F0E8;border-radius:99px;padding:8px 14px;font-size:12px;font-weight:700;color:#4A453D">маска алоэ<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#9A9183" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+        </div>
+      </div>
+      <div style="padding:20px 20px 0">
+        <div style="font-size:14px;font-weight:800">Популярно сейчас</div>
+        <div style="display:flex;flex-direction:column;margin-top:6px">
+          <a class="tap" href="product.html" data-product-id="sunscreen-spf50" style="display:flex;align-items:center;gap:11px;padding:12px 4px;border-bottom:1px solid #F4EFE6"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B05468" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div style="font-size:13.5px;font-weight:600">солнцезащитный крем SPF50</div><div style="margin-left:auto;font-size:10.5px;font-weight:800;color:#B05468">+214%</div></a>
+          <a class="tap" href="product.html" data-product-id="tteokbokki-set" style="display:flex;align-items:center;gap:11px;padding:12px 4px;border-bottom:1px solid #F4EFE6"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3F7330" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div style="font-size:13.5px;font-weight:600">токпокки набор</div><div style="margin-left:auto;font-size:10.5px;font-weight:800;color:#3F7330">+96%</div></a>
+          <a class="tap" href="product.html" data-product-id="kdrama-snack-pack" style="display:flex;align-items:center;gap:11px;padding:12px 4px;border-bottom:1px solid #F4EFE6"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3F7330" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div style="font-size:13.5px;font-weight:600">k-drama snack pack</div><div style="margin-left:auto;font-size:10.5px;font-weight:800;color:#3F7330">+71%</div></a>
+          <a class="tap" href="product.html" data-product-id="sheet-masks-set" style="display:flex;align-items:center;gap:11px;padding:12px 4px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B05468" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div style="font-size:13.5px;font-weight:600">тканевые маски набор</div><div style="margin-left:auto;font-size:10.5px;font-weight:800;color:#B05468">+58%</div></a>
+        </div>
+      </div>
+      <div style="margin:20px 20px 22px;background:#FAF7F2;border:1px solid #EFE9DF;border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:10px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8C6F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>
+        <div style="font-size:11.5px;font-weight:600;color:#6E675C;line-height:1.5">Ищите на русском, узбекском или корейском — мы поймём: «рамен», «ramen», «라면»</div>
+      </div>
+    </div>
+
+    <div class="ios-home-indicator" aria-hidden="true"></div>
+  </div>
+</body>
+</html>
