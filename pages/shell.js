@@ -118,7 +118,7 @@
     if(toastTimer) clearTimeout(toastTimer);
     toastTimer = setTimeout(function(){
       t.classList.remove('is-on');
-    }, 1500);
+    }, 3000);
   }
   function wireToast(){
     if(window.kom){
@@ -131,7 +131,7 @@
       setTimeout(function(){
         var next = (window.kom && kom.seenOnboarding()) ? 'home.html' : 'langSelect.html';
         location.href = next;
-      }, 1500);
+      }, 5000);
     }
   }
 
@@ -144,7 +144,7 @@
       for(var i=0;i<nodes.length;i++) nodes[i].classList.add('kom-hi');
       setTimeout(function(){
         for(var i=0;i<nodes.length;i++) nodes[i].classList.remove('kom-hi');
-      }, 1200);
+      }, 1500);
     });
   }
 
